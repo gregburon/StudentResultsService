@@ -1,0 +1,14 @@
+C:\Users\Greg\Desktop\stuff\ResultsService\bin\Debug\netcoreapp2.1\ResultsService.deps.json
+C:\Users\Greg\Desktop\stuff\ResultsService\bin\Debug\netcoreapp2.1\ResultsService.runtimeconfig.json
+C:\Users\Greg\Desktop\stuff\ResultsService\bin\Debug\netcoreapp2.1\ResultsService.runtimeconfig.dev.json
+C:\Users\Greg\Desktop\stuff\ResultsService\bin\Debug\netcoreapp2.1\ResultsService.dll
+C:\Users\Greg\Desktop\stuff\ResultsService\bin\Debug\netcoreapp2.1\ResultsService.pdb
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\ResultsService.csprojAssemblyReference.cache
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\ResultsService.csproj.CoreCompileInputs.cache
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\ResultsService.RazorAssemblyInfo.cache
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\ResultsService.RazorAssemblyInfo.cs
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\ResultsService.AssemblyInfoInputs.cache
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\ResultsService.AssemblyInfo.cs
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\ResultsService.RazorTargetAssemblyInfo.cache
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\ResultsService.dll
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\ResultsService.pdb

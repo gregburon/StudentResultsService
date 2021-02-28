@@ -1,0 +1,14 @@
+C:\Users\Greg\Desktop\stuff\ResultsService\bin\Debug\netcoreapp2.1\StudentResultsService.deps.json
+C:\Users\Greg\Desktop\stuff\ResultsService\bin\Debug\netcoreapp2.1\StudentResultsService.runtimeconfig.json
+C:\Users\Greg\Desktop\stuff\ResultsService\bin\Debug\netcoreapp2.1\StudentResultsService.runtimeconfig.dev.json
+C:\Users\Greg\Desktop\stuff\ResultsService\bin\Debug\netcoreapp2.1\StudentResultsService.dll
+C:\Users\Greg\Desktop\stuff\ResultsService\bin\Debug\netcoreapp2.1\StudentResultsService.pdb
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\StudentResultsService.csprojAssemblyReference.cache
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\StudentResultsService.csproj.CoreCompileInputs.cache
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\StudentResultsService.RazorAssemblyInfo.cache
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\StudentResultsService.RazorAssemblyInfo.cs
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\StudentResultsService.AssemblyInfoInputs.cache
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\StudentResultsService.AssemblyInfo.cs
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\StudentResultsService.RazorTargetAssemblyInfo.cache
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\StudentResultsService.dll
+C:\Users\Greg\Desktop\stuff\ResultsService\obj\Debug\netcoreapp2.1\StudentResultsService.pdb
