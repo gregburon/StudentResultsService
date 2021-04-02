@@ -7,7 +7,8 @@ Go to the controllers folder and you'll find the StudentResultsController.
 The GET method retrieves a list of students and their classes and the GPA for those classes.
 This would normally be pulling from a database, but this exmample is just to show the use of restful web api.
 
-Build the code.
+Build the code.  You can download this as a zip file and use the Controller code found in the zip but start with this command on command line to build project:
+   prompt>> dotnet new webapi -o MyServiceName --no-https -f net5.0
 on PowerShell, navigate to directory.
 Once built, in the shell, type 'dotnet run'
 This should run the microservice on localhost
