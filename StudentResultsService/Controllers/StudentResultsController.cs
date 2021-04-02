@@ -1,37 +1,42 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace ResultsService.Controllers
+namespace StudentCourseResults.Controllers
 {
+
     public class StudentResults
     {
-        public DateTime Date;
-        public string StudentLastName = "";
-        public string StudentFirstName = "";
-        public string StudentId = "";
-        public string SummaryNotes = "";
-        public List<ClassResults> ClassResults = new List<ClassResults>();
+        public DateTime Date { get; set; }
+        public string StudentLastName { get; set; }
+        public string StudentFirstName { get; set; }
+        public string StudentId { get; set; }
+        public string SummaryNotes { get; set; }
+
+        public List<ClassResults> ClassResults { get; set; }
     }
 
     public class ClassResults
     {
-        public DateTime Date;
-        public string StudentId = "";
-        public string ClassName = "";
-        public float GPA = 4.0f;
+        public DateTime Date { get; set; }
+        public string StudentId { get; set; }
+        public string ClassName { get; set; }
+        public float GPA { get; set; }
 
-        public ClassResults(DateTime date, string id, string className, float gpa)
+        public static ClassResults BuildClassResults(DateTime date, string id, string className, float GPA)
         {
-            Date = date;
-            StudentId = id;
-            ClassName = className;
-            GPA = gpa;
+            ClassResults results = new ClassResults();
+            results.Date = date;
+            results.StudentId = id;
+            results.ClassName = className;
+            results.GPA = GPA;
+            return results;
         }
     }
+
 
     [ApiController]
     [Route("[controller]")]
@@ -57,9 +62,10 @@ namespace ResultsService.Controllers
             studentResultsClark.StudentLastName = "Man";
             studentResultsClark.StudentId = "1243454";
             studentResultsClark.SummaryNotes = "Your student is a pleasure to have in class";
-            studentResultsClark.ClassResults.Add(new ClassResults(DateTime.Now, studentResultsClark.StudentId, "Flying", 4.0f));
-            studentResultsClark.ClassResults.Add(new ClassResults(DateTime.Now, studentResultsClark.StudentId, "Laser beam vision", 3.1f));
-            studentResultsClark.ClassResults.Add(new ClassResults(DateTime.Now, studentResultsClark.StudentId, "Kryptonite Resistance", 0.1f));
+            studentResultsClark.ClassResults = new List<ClassResults>();
+            studentResultsClark.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsClark.StudentId, "Flying", 4.0f));
+            studentResultsClark.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsClark.StudentId, "Laser beam vision", 3.1f));
+            studentResultsClark.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsClark.StudentId, "Kryptonite Resistance", 0.1f));
             studentResultsList.Add(studentResultsClark);
 
             StudentResults studentResultsLois = new StudentResults();
@@ -68,9 +74,10 @@ namespace ResultsService.Controllers
             studentResultsLois.StudentLastName = "Lane";
             studentResultsLois.StudentId = "9834543";
             studentResultsLois.SummaryNotes = "Lois is smart and resourceful.";
-            studentResultsLois.ClassResults.Add(new ClassResults(DateTime.Now, studentResultsLois.StudentId, "Flying", 0.0f));
-            studentResultsLois.ClassResults.Add(new ClassResults(DateTime.Now, studentResultsLois.StudentId, "Journalism", 4.0f));
-            studentResultsLois.ClassResults.Add(new ClassResults(DateTime.Now, studentResultsLois.StudentId, "Establishing personal boundaries", 2.4f));
+            studentResultsLois.ClassResults = new List<ClassResults>();
+            studentResultsLois.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Flying", 0.0f));
+            studentResultsLois.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Journalism", 4.0f));
+            studentResultsLois.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Establishing personal boundaries", 2.4f));
             studentResultsList.Add(studentResultsLois);
 
             return studentResultsList;
