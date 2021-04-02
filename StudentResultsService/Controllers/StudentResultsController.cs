@@ -80,6 +80,44 @@ namespace StudentCourseResults.Controllers
             studentResultsLois.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Establishing personal boundaries", 2.4f));
             studentResultsList.Add(studentResultsLois);
 
+            StudentResults studentResultsGreenLantern = new StudentResults();
+            studentResultsGreenLantern.Date = DateTime.Now;
+            studentResultsGreenLantern.StudentFirstName = "Green";
+            studentResultsGreenLantern.StudentLastName = "Lantern";
+            studentResultsGreenLantern.StudentId = "0025214";
+            studentResultsGreenLantern.SummaryNotes = "Green Lantern was a pleasure to have in class.  He might be a little too cocky for his own good but in the end he does the right thing.";
+            studentResultsGreenLantern.ClassResults = new List<ClassResults>();
+            studentResultsGreenLantern.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Flying", 3.2f));
+            studentResultsGreenLantern.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Alter-Ego", 3.9f));
+            studentResultsGreenLantern.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Green Power Ring", 4.0f));
+            studentResultsList.Add(studentResultsGreenLantern);
+
+            StudentResults studentResultsWonderWoman = new StudentResults();
+            studentResultsWonderWoman.Date = DateTime.Now;
+            studentResultsWonderWoman.StudentFirstName = "Wonder";
+            studentResultsWonderWoman.StudentLastName = "Woman";
+            studentResultsWonderWoman.StudentId = "0215487";
+            studentResultsWonderWoman.SummaryNotes = "Wonder Woman brings true fighting spirit and the feeling of hope and unity to the classroom.";
+            studentResultsWonderWoman.ClassResults = new List<ClassResults>();
+            studentResultsWonderWoman.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Flying", 3.6f));
+            studentResultsWonderWoman.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Bracers of Themiscyra", 4.0f));
+            studentResultsWonderWoman.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Lasso of Hestia", 4.0f));
+            studentResultsWonderWoman.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Sword of the Amazons", 4.0f));
+            studentResultsList.Add(studentResultsWonderWoman);
+
+            StudentResults studentResultBatman = new StudentResults();
+            studentResultBatman.Date = DateTime.Now;
+            studentResultBatman.StudentFirstName = "Bat";
+            studentResultBatman.StudentLastName = "Man";
+            studentResultBatman.StudentId = "9854758";
+            studentResultBatman.SummaryNotes = "Batman is the worlds best detective and a formidible opponent in combat.  I would encourage Batman to let his guard down and allow himself to be vulnerable and build positive, lasting relationships.";
+            studentResultBatman.ClassResults = new List<ClassResults>();
+            studentResultBatman.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Batarang", 3.6f));
+            studentResultBatman.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Detective Skills - Advanced", 4.0f));
+            studentResultBatman.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Martial Arts", 3.7f));
+            studentResultBatman.ClassResults.Add(ClassResults.BuildClassResults(DateTime.Now, studentResultsLois.StudentId, "Building Loving Relationships", 1.7f));
+            studentResultsList.Add(studentResultBatman);
+
             return studentResultsList;
         }
     }
